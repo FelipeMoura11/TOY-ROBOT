@@ -47,12 +47,7 @@ Saída esperada:
 ```
 Posição final: (3, 3), voltado para EAST
 ```
-📦 Estrutura do projeto
-```
-robot.exs           # Arquivo principal com a execução
-robot.ex            # Define o robô e sua lógica de movimento
-file_parser.ex      # Responsável por ler e interpretar o arquivo de texto
-```
+
 
 
 
