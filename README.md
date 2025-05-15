@@ -1,19 +1,59 @@
-# Atividade avaliativa: ToyRobot
+# 🤖 Robô Navegador em Elixir
 
-Este projeto contém o esqueleto do código e os testes automatizados referentes ao exercício Toy Robot.
+Projeto em Elixir onde um robô se movimenta em um tabuleiro virtual com base em comandos contidos em um **arquivo de texto**.
 
-O objetivo desta atividade avaliativa é de implementar o exercício Toy Robot seguindo as definições de funções presentes no projeto e que sua execução seja aderente aos testes automatizados.
+---
 
-Para executar os testes digite o seguinte comando no terminal:
+## 🛠️ Requisitos
 
-```shell
-$ mix test
+- [Elixir](https://elixir-lang.org/install.html) instalado (versão 1.12 ou superior recomendada)
+
+---
+
+## 📁 Formato do arquivo de entrada
+
+Crie um arquivo `commands.txt` com o seguinte formato:
+```bash
+  x y DIREÇÃO
+  COMANDOS
+  0 0 NORTH
+  RAALAL
 ```
+- **Primeira linha**: posição inicial e direção (`NORTH`, `SOUTH`, `EAST`, `WEST`)
+- **Segunda linha**: sequência de comandos:
+  - `A` = avançar
+  - `L` = virar à esquerda
+  - `R` = virar à direita
 
-O projeto também fornece os arquivos **commands.tx** e **robot.exs**. O arquivo **commands.txt** contém um conjunto de comandos válidos para executar após implementar as funções do projeto, enquanto o arquivo **robot.exs** contém o código necessário para ler o arquivo **commands.txt** e executar as funções referentes o projeto para realizar uma simulação do robô. 
+---
 
-Para executar o programa utilizando o arquivo **commands.txt** digite o seguinte comando:
+## 🚀 Como executar
+
+Para executar o programa utilizando o arquivo **commands.txt**, digite o seguinte comando no terminal:
 
 ```shell
 $ mix run robot.exs
 ```
+O programa lerá o arquivo, executará os comandos e imprimirá o estado final do robô.
+
+🧠 Exemplo de uso
+Suponha que o conteúdo do commands.txt seja:
+
+```
+1 2 EAST
+AALAAR
+```
+Saída esperada:
+```
+Posição final: (3, 3), voltado para EAST
+```
+📦 Estrutura do projeto
+```
+robot.exs           # Arquivo principal com a execução
+robot.ex            # Define o robô e sua lógica de movimento
+file_parser.ex      # Responsável por ler e interpretar o arquivo de texto
+```
+
+
+
+
