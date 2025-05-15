@@ -40,12 +40,17 @@ O programa lerá o arquivo, executará os comandos e imprimirá o estado final d
 Suponha que o conteúdo do commands.txt seja:
 
 ```
-1 2 EAST
-AALAAR
+PLACE 1,2,NORTH
+MOVE
+LEFT
+MOVE
+RIGHT
+MOVE
+REPORT
 ```
 Saída esperada:
 ```
-Posição final: (3, 3), voltado para EAST
+O robô está na posição (0, 4) apontando para o norte
 ```
 
 
